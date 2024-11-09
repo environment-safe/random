@@ -1,9 +1,14 @@
-random
-============================
-null
+@environment-safe/random
+========================
+seed based multi type random number generation based on [seedrandom](https://github.com/davidbau/seedrandom) by [davidbau](https://github.com/davidbau) but as an ESM source compatible on the server and in the browser with a multitype generator allowing a single seed to generate many types.
 
 Usage
 -----
+
+```js
+const generator = new Random({seed: 'some-string-seed-value'});
+const aFloatRatio = generator.random();
+```
 
 Testing
 -------
